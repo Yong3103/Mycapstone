@@ -5,22 +5,11 @@
     <title>Forms - Labels and Validations</title>
 </head>
 <body>
-<!-- REFERENCE LINKS-->
-<!-- http://www.w3schools.com/TAGs/att_input_type.asp -->
-<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
-
 
 
 
     <h1>Log In</h1>
     <h2>Please Input your Password and Email</h2>
-
-
-    <!-- Two ways of using a Label-->
-    <!-- Nested -->
-    <!-- for and id connection-->
-
-
     <!-- FORM TAG -->
     <!--Actions: where we send the data. The form will open this page when you click submit -->
     <!--Method: get/post HTTP method -->
@@ -32,15 +21,15 @@
     <!-- The label does 2 things: it adds text as a label AND it connects the text + input -->
     <!-- The label has the for='' attribute, which needs to match the id='' attribute in the input -->
      
-        <label for="email">EMAIL:</label>
-        <input type="email" id="email" name="useremail" value="Email Here">
+        <label for="name">NAME:</label>
+        <input type="text" id="name" name="username" value="Name Here">
         <!-- Note: the name and id attribute are similar, but just used in different contexts -->
         <!-- The name attribute is for saving the data: what data is it? -->
         <!-- The id attribute is for identifying the input: which input is it? -->
 
 
-        <label for="pass">PASSWORD:</label>
-        <input type="password" id="pass" name="password" placeholder="Password">
+        <label for="pass">question:</label>
+        <input type="text" id="question" name="question" placeholder="question">
 
 
 
