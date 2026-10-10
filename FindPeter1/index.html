@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Find Peter - Home</title>
+</head>
+<body>
+        <header>
+        <h1>Find Peter</h1>
+        <p>A story game by Yong</p>
+        <a href = "aboutme.html">About me and my story</a>
+    </header>
+    <main>
+       
+            <h2>Welcome home!</h2>
+            <p>You come home from school, but your dog Peter is missing. The backyard gate is open.</p>
+            <p><strong>Your goal:</strong> Follow the clues and bring Peter home.</p>
+            <!-- <p>This was my first version of the introduction.</p> -->
+            <figure>
+                <a href = "aboutme.html">
+                    <img src = "images/peter-minecraft.png" alt = "A Minecraft-style brown dog with a red collar" width = "300" height = "200">
+                </a>
+                <figcaption>This is Peter, the dog you need to find.</figcaption>
+            </figure>
+            <figure>
+                <img src = "images/backyard-minecraft.png" alt = "A Minecraft-style backyard with an open gate" width = "300" height = "200">
+                <figcaption>The open gate is your first clue.</figcaption>
+                <h3>All the picture are made by AI!</h3>
+            </figure>
+        </section>
+        <section>
+            <h2>Before you start</h2>
+            <p>Fill out this form to plan your search. Your answers will appear in the next page's URL. They are not stored in a database. You will start inside the house. Remember your choices while reading the story. This HTML version does not automatically use your answers.</p>
+            <form action = "game.html" method = "get">
+                <label for = "player">Your player name:</label>
+                <br>
+                <input type = "text" id = "player" name = "player" placeholder = "Enter your name" maxlength = "30" required>
+                <br>
+                <br>
+                <fieldset>
+                    <legend>How will you search for Peter?</legend>
+                    <input type = "radio" id = "careful" name = "search_style" value = "careful" required>
+                    <label for = "careful">Look carefully for clues</label>
+                    <br>
+                    <input type = "radio" id = "calling" name = "search_style" value = "calling">
+                    <label for = "calling">Call Peter's name</label>
+                    <br>
+                    <input type = "radio" id = "asking" name = "search_style" value = "asking">
+                    <label for = "asking">Ask people for help</label>
+                </fieldset>
+                <br>
+                <label for = "item">What will you bring?</label>
+                <br>
+                <select id = "item" name = "item" required>
+                    <option value = "leash">Peter's leash</option>
+                    <option value = "treats">Dog treats</option>
+                    <option value = "toy">Peter's favorite toy</option>
+                </select>
+                <br>
+                <br>
+                <label for = "collar">What color is Peter's collar?</label>
+                <br>
+                <input type = "text" id = "collar" name = "collar" placeholder = "For example: red" maxlength = "20" required>
+                <br>
+                <br>
+                <button type = "submit">Start searching</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
