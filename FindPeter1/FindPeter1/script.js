@@ -116,7 +116,7 @@ function pickUpItem(itemName) {
 // --------------------------------------------------
 function checkLeash() {
   if (inventory.includes("Peter's leash")) {
-    messageDisplay.textContent = "You have Peter's leash and are ready to search outside. The backyard will be added in the next part. This draft ends inside the House.";
+    messageDisplay.textContent = "You have Peter's leash and are ready to search outside.";
   } else {
     messageDisplay.textContent = "Take Peter's leash from beside the back door first.";
   }
