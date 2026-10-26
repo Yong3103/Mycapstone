@@ -1,3 +1,24 @@
-body{
-    background-color: darkblue;
+.heading {
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #2fd0db;
+    padding: 10px;
+}
+
+.card {
+    padding: 15px;
+    border: 2px solid gray;
+    background-color: whitesmoke;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#inventory-display {
+    font-size: 18px;
+    font-weight: bold;
+    color: hwb(200 11% 5%);
+    background-color: lightyellow;
+    padding: 10px;
+    border: 1px solid #2fb3e3;
 }
